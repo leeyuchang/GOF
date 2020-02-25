@@ -15,14 +15,6 @@ public class StringDisplay implements AbstractDisplay {
     printLine();
   }
 
-  private void printLine() {
-    System.out.print("+");
-    for (int i = 0; i < width; i++) {
-      System.out.print("-");
-    }
-    System.out.println("+");
-  }
-
   @Override
   public void print() {
     System.out.println("|" + string + "|");
@@ -31,6 +23,14 @@ public class StringDisplay implements AbstractDisplay {
   @Override
   public void close() {
     printLine();
+  }
+
+  private void printLine() {
+    System.out.print("+");
+    for (int i = 0; i < width; i++) {
+      System.out.print("-");
+    }
+    System.out.println("+");
   }
 
 }
