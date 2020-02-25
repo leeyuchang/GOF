@@ -7,8 +7,8 @@ public class IDCard implements Product {
   private String owner;
 
   public IDCard(String owner) {
-    System.out.println(owner + "のカードを作ります。");
     this.owner = owner;
+    System.out.println(owner + "のカードを作ります。");
   }
 
   @Override

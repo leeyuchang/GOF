@@ -1,12 +1,12 @@
 package ch04.factorymethod.framework;
 
-public interface Factory {
+public abstract class Factory {
 
-  public Product createProduct(String owner);
+  protected abstract Product createProduct(String owner);
   
-  public void registerProduct(Product product);
+  protected abstract void registerProduct(Product product);
 
-  default public Product create(String owner) {
+  public Product create(String owner) {
     Product p = createProduct(owner);
     registerProduct(p);
     return p;
