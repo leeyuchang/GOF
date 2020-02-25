@@ -15,12 +15,12 @@ public class Directory extends Entry {
 	}
 
 	@Override
-	String getName() {
+	public String getName() {
 		return name;
 	}
 
 	@Override
-	int getSize() {
+	public int getSize() {
 		int size = 0;
 		for (Entry e : dir) {
 			size += e.getSize();
@@ -35,7 +35,7 @@ public class Directory extends Entry {
 	}
 
 	@Override
-	public List<Entry> iterator() throws FileTreatementException {
+	public List<Entry> asList() throws FileTreatementException {
 		return dir;
 	}
 

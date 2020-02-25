@@ -10,14 +10,13 @@ public class File extends Entry {
 		this.size = size;
 	}
 	
-
 	@Override
-	String getName() {
+	public String getName() {
 		return name;
 	}
 
 	@Override
-	int getSize() {
+	public int getSize() {
 		return size;
 	}
 	

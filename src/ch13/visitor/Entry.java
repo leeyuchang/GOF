@@ -6,14 +6,14 @@ import ch11.composite.FileTreatementException;
 
 public abstract class Entry implements Element {
 	
-	abstract String getName();
-	abstract int getSize();
+	public abstract String getName();
+	public abstract int getSize();
 	
 	public Entry add(Entry entrty) throws FileTreatementException {
 		throw new FileTreatementException("");
 	}
 
-	public List<Entry> iterator() throws FileTreatementException {
+	public List<Entry> asList() throws FileTreatementException {
 		throw new FileTreatementException("");
 	}
 	
