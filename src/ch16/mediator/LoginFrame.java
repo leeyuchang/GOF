@@ -47,14 +47,14 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
     textPass.setEchoChar('*');
     buttonOk = new ColleagueButton("OK");
     buttonCancel = new ColleagueButton("Cancel");
-    // Mediatorのセット
+
     checkGuest.setMediator(this);
     checkLogin.setMediator(this);
     textUser.setMediator(this);
     textPass.setMediator(this);
     buttonOk.setMediator(this);
     buttonCancel.setMediator(this);
-    // Listenerのセット
+
     checkGuest.addItemListener(checkGuest);
     checkLogin.addItemListener(checkLogin);
     textUser.addTextListener(textUser);
