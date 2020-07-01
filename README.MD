@@ -1,10 +1,10 @@
 ### Java言語で学ぶ デザインパターン入門
 #### デザインパターンに慣れる
-Iterator ― 1つ1つ数え上げる
-Adapter ― 一皮かぶせて再利用
+Iterator ― 1つ1つ数え上げる </br>
+Adapter ― 一皮かぶせて再利用 </br>
 #### サブクラスにまかせる
-Template Method ― 具体的な処理をサブクラスにまかせる
-FactoryMethod ― インスタンス作成をサブクラスにまかせる
+Template Method ― 具体的な処理をサブクラスにまかせる </br>
+FactoryMethod ― インスタンス作成をサブクラスにまかせる </br>
 #### インスタンスを作る
 Singleton ― たった1つのインスタンス
 Prototype ― コピーしてインスタンスを作る
